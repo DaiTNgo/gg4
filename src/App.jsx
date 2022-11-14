@@ -8,7 +8,7 @@ function App() {
     useEffect(() => {
         document.title = `You clicked ${count} times`;
         ReactGA.event({
-            category: 'User',
+            category: 'User' + count,
             action: 'Clicked Button'
         })
 
@@ -16,7 +16,7 @@ function App() {
             hitType: 'pageview',
             page: '/daingoprodn'
         });
-    }, []);
+    }, [count]);
     return (<React.Fragment>
         <div className='App'>
             <header className='App-header'>
