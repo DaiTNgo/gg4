@@ -4,7 +4,9 @@ import './App.css';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('G-BW68E5EZ6R');
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.pageview('/');
+ReactGA.pageview('/about');
+ReactGA.pageview('/contact');
 
 function App() {
     const [count, setCount] = useState(0);
