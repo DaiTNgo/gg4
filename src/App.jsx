@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -12,7 +12,10 @@ function App() {
             action: 'Clicked Button'
         })
 
-        ReactGA.pageview('/')
+        ReactGA.send({
+            hitType: 'page_view',
+            page: '/'
+        });
     }, []);
     return (<React.Fragment>
         <div className='App'>

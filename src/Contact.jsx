@@ -1,9 +1,12 @@
 import React, {useEffect} from 'react'
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function  Contact(){
     useEffect(() =>{
-        ReactGA.pageview('/contact');
+        ReactGA.send({
+            hitType: 'page_view',
+            page: '/contact'
+        });
     },[])
     return <div>Contact</div>
 }

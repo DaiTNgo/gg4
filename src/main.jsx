@@ -5,7 +5,7 @@ import './index.css'
 import {BrowserRouter, createBrowserRouter, Route, Link, RouterProvider, Routes} from "react-router-dom";
 import Contact from "./Contact";
 import About from "./About";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 ReactGA.initialize('G-BW68E5EZ6R');
 
