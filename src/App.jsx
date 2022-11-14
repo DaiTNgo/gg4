@@ -13,8 +13,8 @@ function App() {
         })
 
         ReactGA.send({
-            hitType: 'page_view',
-            page: '/'
+            hitType: 'pageview',
+            page: '/daingoprodn'
         });
     }, []);
     return (<React.Fragment>

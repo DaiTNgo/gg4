@@ -5,7 +5,7 @@ function  About(){
     useEffect(() =>{
         ReactGA.send({
             hitType: 'page_view',
-            page: '/about'
+            page: '/aboutdaingo'
         });
     },[])
     return <div>About</div>
