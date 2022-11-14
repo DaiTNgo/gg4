@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 function  Contact(){
     useEffect(() =>{
         ReactGA.send({
-            hitType: 'pageviewdaingo',
+            hitType: 'pageview',
             page: '/contact'
         });
     },[])

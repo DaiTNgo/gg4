@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 function  About(){
     useEffect(() =>{
         ReactGA.send({
-            hitType: 'page_view',
+            hitType: 'pageview',
             page: '/aboutdaingo'
         });
     },[])
