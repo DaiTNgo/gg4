@@ -1,14 +1,27 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 
-function  About(){
-    useEffect(() =>{
+function About() {
+    useEffect(() => {
         ReactGA.send({
-            hitType: 'pageview',
-            page: '/aboutdaingo'
+            hitType: "pageview",
+            page: "/aboutdaingo",
         });
-    },[])
-    return <div>About</div>
+    }, []);
+    return (
+        <div>
+            <h1>About</h1>
+            <button
+                onClick={() => {
+                    window.dataLayer.push({
+                        a: "b",
+                        c: "da",
+                    });
+                }}>
+                Click GTM
+            </button>
+        </div>
+    );
 }
 
 export default About;
