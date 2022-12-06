@@ -16,15 +16,6 @@ import ReactGA from "react-ga4";
 import Info from "./Info";
 
 ReactGA.initialize("G-BW68E5EZ6R");
-window.dataLayer = window.dataLayer || [];
-
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag("js", new Date());
-
-gtag("config", "G-BW68E5EZ6R");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
