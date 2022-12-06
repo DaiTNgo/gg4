@@ -12,10 +12,10 @@ import {
 } from "react-router-dom";
 import Contact from "./Contact";
 import About from "./About";
-import ReactGA from "react-ga4";
+// import ReactGA from "react-ga4";
 import Info from "./Info";
 
-ReactGA.initialize("G-BW68E5EZ6R");
+// ReactGA.initialize("G-BW68E5EZ6R");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
