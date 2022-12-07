@@ -16,12 +16,6 @@ import Info from './Info';
 
 ReactGA.initialize('G-BW68E5EZ6R');
 
-// history.listen((location) => {
-//   if (window.ga) {
-//     window.ga('send', 'pageview', location.pathname);
-//   }
-// });
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

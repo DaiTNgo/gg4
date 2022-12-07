@@ -12,11 +12,14 @@ function Info() {
   }, []);
 
   const handleSendEvent = () => {
-    ReactGA.event({
+    // ReactGA.event({
+    //   category: 'Textttttttttt',
+    //   action: 'Text: ' + text,
+    // });
+    window.dataLayer.push({
       category: 'Textttttttttt',
       action: 'Text: ' + text,
     });
-
     setText('');
     refText.current.focus();
   };
